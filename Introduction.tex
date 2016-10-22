@@ -4,10 +4,7 @@
 Nowadays the automotive business is rapidly and continuously changing, driven by needs of 
 electrical\todo{why important?}, autonomously driving, and connected cars and by the appearance of new major players in
 the field, like Google~\cite{Google}, Apple~\cite{Apple,Apple2}, Tesla, and UBER.
-OEMs are more and more becoming software companies 
-and have an increasing and strong motivation
-to embrace organization-wide and also cross-organizations Continuous Integration \& Deployment (CI\&D) to yield improvements
-in flexibility and cycle time, despite the challenges.
+OEMs are more and more becoming software companies. 
 Historically, software was introduced in cars
 to optimize the control of the engines. 
 Today, according to industry experts, 80\%
@@ -16,23 +13,35 @@ based on electronics and a big part of electronics is software.
 
 The complexity of the automotive domain naturally leads (driven by the V-model development method) on having different level of abstractions and on splitting the organization in sections, each of them taking care of a specific level, e.g. top level requirements,
 architecture, design and software development, hardware, mechanical parts, etc. 
+
 Moreover, it is very impractical to produce all parts comprising a vehicle in-house. Normally OEMs 
 ask suppliers to produce parts of the vehicle, and the number of suppliers involved in parallel development can easily
 reach a count of 50 different suppliers. 
 This means that the knowledge and competence of building a car is spread around the ecosystem composed of several different companies, with different organizations, objectives, competences, constraints, cultures, languages, and geographical placements. 
-Therefore, reducing time-to-marked and improving flexibility in the automotive domain necessarily need to involve different actors in the automotive ecosystems.
 
-Currently, the agreements between these companies are mainly based on closed contracts. 
-However, our hypothesis, which is beyond the motivation of this paper, is that {\bf closed contracts are a killer for cross-organizations CI\&D}.
-We believe that a new way of working between a OEM and its
-suppliers is needed in order to seriously adopt organization-wide CI\&D in the automotive domain. This is because only a part of the software is produced in house.
-More specifically, the relation between the OEM and its suppliers should change from a contract-based relationship to a more
-collaborative one where the OEM and suppliers are part
-of the same ecosystem and collaborate for mutual benefit.
-More transparency and less (closed-)contract-based working will then
-be some of the key enablers for organization-wide CI\&D.
+Nowadays OEMs have an increasing and strong motivation
+to embrace system-wide Continuous Integration \& Deployment (CI\&D) to yield improvements
+in flexibility and cycle time, despite the challenges. 
+%Therefore, reducing time-to-marked and improving flexibility in the automotive domain necessarily need to involve different actors in the automotive ecosystems.
+Since automotive development relies on complex supply chains, this implies that agility across company boundaries becomes a crucial concern.
 
-In order to confirm or reject this hypothesis we formulated the following research questions: % and sub-research questions:
+In this paper we want to investigate what are the challenges and impediments of scaling agility beyond the company boundaries.  
+%However, our hypothesis, which is beyond the motivation of this paper, is that {\bf closed contracts are a killer for cross-organizations CI\&D}.
+Specifically, in this paper we focus on {\em contracts} that regulate the agreements between these companies 
+%are mainly based on closed contracts.
+and {\em transparency} intended as the degree of information that is shared between the various companies in the ecosystem. 
+
+Our study aims at providing an answer to the following research questions:
+
+%We believe that a new way of working between a OEM and its
+%suppliers is needed in order to seriously adopt organization-wide CI\&D in the automotive domain. This is because only a part of the software is produced in house.
+%More specifically, the relation between the OEM and its suppliers should change from a contract-based relationship to a more
+%collaborative one where the OEM and suppliers are part
+%of the same ecosystem and collaborate for mutual benefit.
+%More transparency and less (closed-)contract-based working will then
+%be some of the key enablers for organization-wide CI\&D.
+%
+%In order to confirm or reject this hypothesis we formulated the following research questions: % and sub-research questions:
 
 %\begin{itemize}
 %\item {\bf RQ1}: What are the challenges, impediments, and opportunities of applying continuous
@@ -40,21 +49,23 @@ In order to confirm or reject this hypothesis we formulated the following resear
 %automotive software ecosystem?
 \begin{itemize}
 %\item {\em RQ1: What is the impact on business model strategies?}
-\item {\em RQ1: What are the risks of increasing inter-organisations transparency?}
-\item {\em RQ2: What are the benefits of increasing inter-organisations transparency?} %ch existing concepts can benefit inter-organisational transparency?}
-\item {\em RQ3: What are the main challenges while improving inter-organisations transparency?}
-\item {\em RQ4: What is the impact on business model strategies?}
+\item {\em RQ1: What are the risks and/or benefits of increasing inter-organisational transparency?}
+\item {\em RQ2: Are closed-contracts an impediment for scaling agility across company boundaries, and what are the challenges of changing this collaboration model?} %What are the risksbenefits of increasing inter-organisations transparency?} %ch existing concepts can benefit inter-organisational transparency?}
+%\item {\em RQ3: What are the main challenges while improving inter-organisations transparency?}
+%\item {\em RQ3: What can be the impacts on business model strategies?}
 \end{itemize}
 %\end{itemize}
 
 To give an answer to these research questions we performed a set of semi-structured interviews within Volvo Cars and 
 %Delphi 
-one of their larger supplier in the context of a pilot project within Volvo Cars. This pilot project is experimenting a more open and transparent way of working between these two companies.
+one of their larger supplier in the context of a pilot project within Volvo Cars. This pilot project is experimenting a more open and transparent way of working between these two companies. It is a large and complex project with over 100 engineers, and it will be closer to 200 if we include also developers. % and engineers if one count all types . 
+%There are close to 30 different SCRUM and Agile teams. %It is classified\todo{By whom? What does this mean?} as the highest degree of complexity that can be done between the companies. 
+In an attempt to reduce the complexity, developers from both companies work in the same office space, and they are organized in around 30 different SCRUM and Agile teams.
 
-It is a large and complex project with over 100 engineers, and it will be closer to 200 developers and engineers if one count all types. There are close to 30 different SCRUM and Agile teams. It is classified\todo{By whom? What does this mean?} as the highest degree of complexity that can be done between the companies. In an attempt to reduce the complexity, developers from both companies work in the same office space.
+The findings of the paper are ...\pat{findings}
 
-\pat{Rogardt: is the above enough or should I say something more}
+%\pat{Rogardt: is the above enough or should I say something more}
 
-\pat{Rogardt might help here. I don't know much about this project and also, how much we can say?}
+%\pat{Rogardt might help here. I don't know much about this project and also, how much we can say?}
 
 The paper is organized as follows: Section~\ref{sec:context} defines the context of the study. Section~\ref{sec:researchMethod} describes the research methodology we followed in order to give an answer to the research questions. Section~\ref{sec:results} presents the results of the study. Section~\ref{sec:discussion} discussed the main findings. Section~\ref{sec:relatedWorks} presents related works, and finally the paper concludes in Section~\ref{sec:conclusion} with final remarks and direction for future works.
