@@ -1,35 +1,29 @@
 \section{Introduction}\label{sec:intro}
 
 
-Nowadays the automotive business is rapidly and continuously changing, driven by needs of 
-electrical\todo{why important?}, autonomously driving, and connected cars and by the appearance of new major players in
-the field, like Google~\cite{Google}, Apple~\cite{Apple,Apple2}, Tesla, and UBER.
-OEMs are more and more becoming software companies. 
-Historically, software was introduced in cars
-to optimize the control of the engines. 
-Today, according to industry experts, 80\%
-to 90\% of the innovation within the automotive industry is
-based on electronics and a big part of electronics is software. 
+Nowadays the automotive industry is rapidly and continuously changing, driven by needs of 
+electric/hybrid cars\todo{why important?}, autonomous driving, and connected cars. At the same time, new major players are emerging in the field, like Google~\cite{Google}, Apple~\cite{Apple,Apple2}, Tesla, and UBER, while Original Equipment Manufacturers (OEMs) are incresingly turning into software companies. 
+Historically, software was introduced in cars to optimize the control of the engine. 
+Today, according to industry experts \todo{add citation}, 80\% to 90\% of the innovation in the automotive industry is based on electronics, a big part of which is software. 
 
-The complexity of the automotive domain naturally leads (driven by the V-model development method) on having different level of abstractions and on splitting the organization in sections, each of them taking care of a specific level, e.g. top level requirements,
-architecture, design and software development, hardware, mechanical parts, etc. 
+The complexity of the automotive domain naturally leads (driven by the V-model development method on having different level of abstractions and on splitting the organization in sections, each of them taking care of a specific level, e.g. top level requirements,
+architecture, design and software development, hardware, mechanical parts, etc. \todo{the role of the V-model is unclear. If it is generally adopted by automotive industry, we could rephrase in (1) the V model is the standard de facto. (2) due to the complexity of the domain, the V-model causes a silos effect ... This causes separations that hinders infor sharing and synergy.})
 
-Moreover, it is very impractical to produce all parts comprising a vehicle in-house. Normally OEMs 
-ask suppliers to produce parts of the vehicle, and the number of suppliers involved in parallel development can easily
-reach a count of 50 different suppliers. 
-This means that the knowledge and competence of building a car is spread around the ecosystem composed of several different companies, with different organizations, objectives, competences, constraints, cultures, languages, and geographical placements. 
+Moreover, it is very impractical to produce in-house all parts comprising a vehicle. Normally, OEMs 
+ask suppliers to produce parts of the vehicle, and the number of suppliers involved in parallel development can easily reach a count of 50 different suppliers. 
+This means that the knowledge and competence of building a car is spread across an ecosystem composed of several different companies, each with potentially different internal organizations, objectives, competences, constraints, cultures, languages, and geographical locations. 
 
 Nowadays OEMs have an increasing and strong motivation
-to embrace system-wide Continuous Integration \& Deployment (CI\&D) to yield improvements
+to embrace system-wide Continuous Integration \& Deployment (CI\&D). The goal is to improve
 in flexibility and cycle time, despite the challenges. 
 %Therefore, reducing time-to-marked and improving flexibility in the automotive domain necessarily need to involve different actors in the automotive ecosystems.
-Since automotive development relies on complex supply chains, this implies that agility across company boundaries becomes a crucial concern.
+Since automotive development relies on complex supply chains, the agility across company boundaries becomes a crucial concern.
 
-In this paper we want to investigate what are the challenges and impediments of scaling agility beyond the company boundaries.  
+In this paper we want to investigate \todo{what we claim here is not fully aligned with the RQs} what are the challenges and impediments of scaling software engineering agility \todo{added SE: to make the SE relevance more evident} beyond the company boundaries.  
 %However, our hypothesis, which is beyond the motivation of this paper, is that {\bf closed contracts are a killer for cross-organizations CI\&D}.
-Specifically, in this paper we focus on {\em contracts} that regulate the agreements between these companies 
+Specifically, we focus on {\em contracts} that regulate the agreements between these companies 
 %are mainly based on closed contracts.
-and {\em transparency} intended as the degree of information that is shared between the various companies in the ecosystem. 
+and {\em transparency} intended as the degree/level of information that is shared between the various companies in the ecosystem. 
 
 Our study aims at providing an answer to the following research questions:
 
@@ -57,11 +51,11 @@ Our study aims at providing an answer to the following research questions:
 \end{itemize}
 %\end{itemize}
 
-To give an answer to these research questions we performed a set of semi-structured interviews within Volvo Cars and 
+To give an answer to these research questions we performed semi-structured interviews within Volvo Cars and 
 %Delphi 
-one of their larger supplier in the context of a pilot project within Volvo Cars. This pilot project is experimenting a more open and transparent way of working between these two companies. It is a large and complex project with over 100 engineers, and it will be closer to 200 if we include also developers. % and engineers if one count all types . 
+one of their larger suppliers in the context of a pilot project within Volvo Cars. This pilot project is experimenting a more open and transparent way of working between these two companies. It is a large and complex project with over 100 engineers, and it will be closer to 200 if we include also developers. % and engineers if one count all types . 
 %There are close to 30 different SCRUM and Agile teams. %It is classified\todo{By whom? What does this mean?} as the highest degree of complexity that can be done between the companies. 
-In an attempt to reduce the complexity, developers from both companies work in the same office space, and they are organized in around 30 different SCRUM and Agile teams.
+In an attempt to reduce the complexity, developers from both companies work in the same office space, and they are organized in around 30 different SCRUM and Agile teams. \todo{scrum is (!) agile: is the difference relevant?}
 
 The findings of the paper are ...\pat{findings}
 
