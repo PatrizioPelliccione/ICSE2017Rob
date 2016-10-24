@@ -67,11 +67,11 @@ During this research, we assumed inter-organisational transparency was a key fac
 \pat{Rob, please find a quotation saying that transparency is not necessary condition for CI\&D ?}
 \noindent {\bf F1.1: Important, but not necessary.} The interviewees agree that the two topics together (information transparency and inter-organisational CI\&D) are indeed important, but not necessary. These two topics are integrated as often as possible, but also independent and successful as such, e.g. inter-organisational CI\&D without full transparency. This is a quotation from an interviewee highlighting the importance of transparency:
 
-\begin{aquote}{...}
+\begin{aquote}{Software architect of Volvo Cars}
 I think it [transparency] is very important, very important in general to increase efficiency. Very much for CI\&D. These two are integrated as often as possible, then smaller issues will be erased on daily basis and another main concern is when an issue arise that we need to resolve quickly. I think when you need transparency, so we can take quick decision across organizations. Without transparency decision and discussion can take too long time.
 \end{aquote}
-\pat{Rogardt, who said that? Rob, might you please add also a table presenting our population? Possible table: column with incremental number, company (Volvo cars or supplier), Role, Years of experience. The table should be in the interviewing phase of Section III}
-\rog{Volvo, Quote: "I am working as an electrical system architect. It is about software architecture on a complete vehicle level". He has been active in this role 2.5 years, and been active in this type of industry for 19 years (I think he mean Volvo, both as an employee and as a consult }
+%\pat{Rogardt, who said that? Rob, might you please add also a table presenting our population? Possible table: column with incremental number, company (Volvo cars or supplier), Role, Years of experience. The table should be in the interviewing phase of Section III}
+%\rog{Volvo, Quote: "I am working as an electrical system architect. It is about software architecture on a complete vehicle level". He has been active in this role 2.5 years, and been active in this type of industry for 19 years (I think he mean Volvo, both as an employee and as a consult }
 
 \noindent {\bf F1.2: Beneficial for synergy.} The interviewees agree that the combination of inter-organisational transparency and CI\&D produce synergy effects in terms of efficiency, trust, and mutual understanding.
 
@@ -110,7 +110,14 @@ The interview results {\bf support the proposition}, and the increase of informa
 %\rog{partially, but this seem not to good: People will jump to conclusions when they see some bad numbers somewhere or something that is not happening. Off course, transparency is mostly good:-}
 
 
-\noindent {\bf F2.1: Increased transparency is positive.} All the interviewees experience positively the increase of inter-organisational transparency between companies and employees, for both business and personal relationships. The interviewees experience positive effects in terms of more awareness of the project status and increased mutual understanding. In particular, Volvo Cars employees found sharing a workplace with developers of the supplier especially effective for creating a shared mental model, thanks to the closer interaction with e.g. software developers.
+\noindent {\bf F2.1: Increased transparency is positive.} All the interviewees experience positively the increase of inter-organisational transparency between companies and employees, for both business and personal relationships: 
+
+\begin{aquote}{}
+Volvo Cars could order a Linux system and get this in a traditional way. We get binary report and get the delivery at the end and we could be happy. We will lose something, because we are building this software together and we have the rights to won and use them the future. Having Transparency and CI really gives a benefit to Volvo Cars in the future reuse this assets, knowledge and experience.
+\end{aquote}
+
+
+The interviewees experience positive effects in terms of more awareness of the project status and increased mutual understanding. In particular, Volvo Cars employees found sharing a workplace with developers of the supplier especially effective for creating a shared mental model, thanks to the closer interaction with e.g. software developers.
 
 However, it is important to identify which kind of information should be shared:
 
@@ -295,52 +302,52 @@ are industry-wide standards and processes shared among organizations an enabler?
 \vspace{.2cm}
 \subsubsection{Proposition 7: Strict contract-based collaboration is an impediment for inter-organisational Continuous Integration and Deployment}
 
-\rog{
-
-Here are a few lovely quotes that can be used, even good conversations. Maybe, depending on the place, we could even report one of the conversations?
-
-Question: Do you feel that there are constraints imposed by the contract that is signed for this project?
-
-Quote: “Definitely, it is mainly that are all the commercial information. Technically we can speak freely and we can talk about all of the issues. But when it comes to cost, then it needs to go via the official way. It needs to be, that is also why we need the information kept internally at Delphi when it comes down to estimations, because we need to prepare that information and we end up with end numbers. If you go into all of those details it would be difficult to understand why we have this numbers, because not everything will be visible in estimates. The reasoning behind this is, it needs to be internal. The end number will be discussed with the customer. That is pretty normal. This is maybe not your question right, but I would like to work in a different way in this area. Because it is possible in an agile world to do this differently, but the preferred way would be not to buy content, but today commercial contract is that bought a certain content. It would be better if they buy a certain number of engineering hours.”
-
-Question: So instead of a fixed price?
-
-Quota: “It could be fixed, but also engineering hours to a certain cost. Then we should together decide how to fill in this engineering hours with. So what are we doing in these hours.”
-
-New conversation:
-
-Question: “In the beginning of the project there was a contract designed and signed by both companies. Do you feel that there are constraints imposed by this contract now the project is ongoing?”
-
-Quote: “Yes, I would say that in this case Volvo wants to work in an agile manner. That requires also basically an agile contract. This is not really the case. This is in many sense stopping some of the activities. If you had for example time and material contract, with complete openness than Volvo would know exactly what they pay for. Every day and every second. So they can control everything what they pay for engineering. This is not really the case, it’s a fixed price. So it is Delphi that is controlling the costs. Volvo is still wanting us to be agile and to do things that are not in the contract. It is kind of way of working also should be supported by a time and material agile contract.”
-
-I like this conversation very much:
-
-Question: I have a few questions on CI&D now. What is the influence of a strict contract-based project on CI&D?
-
-Quote: This is both an agile and a CI project, but also a fixed price. So those two worlds don’t mix for me.
-
-Question: It is a traditional contract, but a modern way of working. It sounds like a contradiction.
-
-Quote: “It is a contradiction. And it will be a contradiction and an issue in my experience. Because the customer needs to know that when you put in new features in a high ranker than we need to take others out. You change the scope of the project and that is going to cost the supplier. The supplier is going to track this and are making losses. I have seen it happen before, so. But regarding CI, it is like any other project.”
-
-Question: Do you have experience with other projects that are better suited in this situation?
-
-Quote: “Yes, you can buy capacity instead of specific function points.” 
-
-Question: Developing hours instead of a fixed amount of money.
-
-Quote: “And then you can discuss the actual productivity and resources. When you are not happy with the productivity levels. It is very difficult to estimate time and costs for a project of this size. The project is changing and that makes even harder, for any project of this size for that matter. It is a difficult mix to have agile and fixed price contract. “
-
-Question: Flexible against non-flexible, like two opposites. Could it be a different project when the contract was based on developing hours instead of a fixed price?
-
-Quote: “Yes, I think so. I think it would be a more shared ownership when it was a full time and material work rather than contract. Because there need to be some checkpoints. I think there are so many unknowns in this project, but Delphi is building a platform out of this project as well. So they are taking part of the risk here. The risk is on both side, but I think an agile project, a full agile project would be better. Then we could get to a situation earlier with quality.”
-
-Question: You also need a contract, now it is difficult to setup a contract. Very strict regulations or open for interpretation. The latter one would be better suited.
-
-Quote: “Yes, indeed. I think I looser contract sounds betters, but I did not see the contract that is signed, but I believe it is better to have. I have seen some of the parts of the contract around KPI and sort. I thought they were very ambitious. I think a looser contract would be better and healthier for the project. I know Volvo has their timescales, you can fix the time, but then it is the costs and functionalities that floats and lead into more agile contract.”
-
-
-}
+%\rog{
+%
+%Here are a few lovely quotes that can be used, even good conversations. Maybe, depending on the place, we could even report one of the conversations?
+%
+%Question: Do you feel that there are constraints imposed by the contract that is signed for this project?
+%
+%Quote: “Definitely, it is mainly that are all the commercial information. Technically we can speak freely and we can talk about all of the issues. But when it comes to cost, then it needs to go via the official way. It needs to be, that is also why we need the information kept internally at Delphi when it comes down to estimations, because we need to prepare that information and we end up with end numbers. If you go into all of those details it would be difficult to understand why we have this numbers, because not everything will be visible in estimates. The reasoning behind this is, it needs to be internal. The end number will be discussed with the customer. That is pretty normal. This is maybe not your question right, but I would like to work in a different way in this area. Because it is possible in an agile world to do this differently, but the preferred way would be not to buy content, but today commercial contract is that bought a certain content. It would be better if they buy a certain number of engineering hours.”
+%
+%Question: So instead of a fixed price?
+%
+%Quota: “It could be fixed, but also engineering hours to a certain cost. Then we should together decide how to fill in this engineering hours with. So what are we doing in these hours.”
+%
+%New conversation:
+%
+%Question: “In the beginning of the project there was a contract designed and signed by both companies. Do you feel that there are constraints imposed by this contract now the project is ongoing?”
+%
+%Quote: “Yes, I would say that in this case Volvo wants to work in an agile manner. That requires also basically an agile contract. This is not really the case. This is in many sense stopping some of the activities. If you had for example time and material contract, with complete openness than Volvo would know exactly what they pay for. Every day and every second. So they can control everything what they pay for engineering. This is not really the case, it’s a fixed price. So it is Delphi that is controlling the costs. Volvo is still wanting us to be agile and to do things that are not in the contract. It is kind of way of working also should be supported by a time and material agile contract.”
+%
+%I like this conversation very much:
+%
+%Question: I have a few questions on CI\&D now. What is the influence of a strict contract-based project on CI\&D?
+%
+%Quote: This is both an agile and a CI project, but also a fixed price. So those two worlds don’t mix for me.
+%
+%Question: It is a traditional contract, but a modern way of working. It sounds like a contradiction.
+%
+%Quote: “It is a contradiction. And it will be a contradiction and an issue in my experience. Because the customer needs to know that when you put in new features in a high ranker than we need to take others out. You change the scope of the project and that is going to cost the supplier. The supplier is going to track this and are making losses. I have seen it happen before, so. But regarding CI, it is like any other project.”
+%
+%Question: Do you have experience with other projects that are better suited in this situation?
+%
+%Quote: “Yes, you can buy capacity instead of specific function points.” 
+%
+%Question: Developing hours instead of a fixed amount of money.
+%
+%Quote: “And then you can discuss the actual productivity and resources. When you are not happy with the productivity levels. It is very difficult to estimate time and costs for a project of this size. The project is changing and that makes even harder, for any project of this size for that matter. It is a difficult mix to have agile and fixed price contract. “
+%
+%Question: Flexible against non-flexible, like two opposites. Could it be a different project when the contract was based on developing hours instead of a fixed price?
+%
+%Quote: “Yes, I think so. I think it would be a more shared ownership when it was a full time and material work rather than contract. Because there need to be some checkpoints. I think there are so many unknowns in this project, but Delphi is building a platform out of this project as well. So they are taking part of the risk here. The risk is on both side, but I think an agile project, a full agile project would be better. Then we could get to a situation earlier with quality.”
+%
+%Question: You also need a contract, now it is difficult to setup a contract. Very strict regulations or open for interpretation. The latter one would be better suited.
+%
+%Quote: “Yes, indeed. I think I looser contract sounds betters, but I did not see the contract that is signed, but I believe it is better to have. I have seen some of the parts of the contract around KPI and sort. I thought they were very ambitious. I think a looser contract would be better and healthier for the project. I know Volvo has their timescales, you can fix the time, but then it is the costs and functionalities that floats and lead into more agile contract.”
+%
+%
+%}
 
 This proposition challenges how practitioners experience a strict (or closed) contract in a inter-organisational setting where companies work together in software engineering projects using CI\&D. During the interview survey, the interviewees were asked about the role of the contract when looking at information sharing and inter-organisational CI\&D. During the research it became clear that information sharing is seen as a crucial factor for inter-organisational collaboration. A closed contract regulates traditional project setups where the customer defines a list of requirements and the supplier has to fulfil it within a given time frame and budget. The automotive industry is traditional and relatively closed. It however emerges that it is changing towards more open collaborations, %greater inter-organisational transparency, 
 participation in open source projects, and becoming a software-intensive sector. While still ongoing, this transition is confirmed by all interviewed stakeholders, and could lead to a cultural change toward adopting more open or flexible contracts for inter-organisational CI\&D.
@@ -356,7 +363,7 @@ The interview results {\bf support the proposition}: a strict contract-based col
 
 \noindent {\bf F7.1: Flexible contracts favour inter-organisational collaboration.} The interviewees share the opinion that a more open (or flexible) contract would be healthier for the project and benefit inter-organisational collaboration: 
 
-\begin{aquote}
+\begin{aquote}{...}
 I would say that in this case Volvo wants to work in an agile manner. That requires also basically agile contract. This is not really the case. This is in many sense stopping some of the activities...
 \end{aquote}
 %\rog{We have two factors here: more open transparency policy and being in the same office. It hard from the interviews to see which one has the largest effect:- Both seems to give positive results. Them main problem is that the contract stops both activities and transparency. Here we have several quotes against fix-prices, however, I don't know if this kind of quotes fit here, such as:
@@ -368,8 +375,31 @@ I would say that in this case Volvo wants to work in an agile manner. That requi
 %}
 
 
-Although some of the project members from both customer and supplier companies are not fully aware of the contract details, they do share the feeling of being restricted. They believe that strict contracts conflict with an agile way of working instead of supporting it, and suggest to adopt more flexible contracts, instead, also referred to as Time and Materials (T\&M) contracts\footnote{According to a T\&M contract, the contractor is being billed per hour regardless of the software project duration. If any additional features have to be developed the supplier charges just for the time spent by its employees working on a certain set of tasks [en.wikipedia.org]. This brings high flexibility to accommodate projects with evolving requirements, but also high uncertainty about the related costs.}. 
-The interviewees agree that a T\&M contract allows for a better adaptation to project changes, distribution of resources, and it creates shared ownership otherwise hindered by closed contracts. They also argue in favour of a combination of a fixed price and T\&M contract, where stakeholders would agree on the product and cost estimation, but maintain high flexibility on how to produce it. This combination fulfils the need for flexibility and agility, but also the security for the customer. All interviewees made it clear that good collaboration between their companies is important from a legal and contractual perspective to support inter-organisational CI\&D.
+Although some of the project members from both customer and supplier companies are not fully aware of the contract details, they do share the feeling of being restricted. 
+%
+%\begin{aquote}
+%...the customer needs to know that when you put in new features in a high ranker than we need to take others out. You change the scope of the project and that is going to cost the supplier. The supplier is going to track this and are making losses. I have seen it happen before, so. But regarding CI, it is like any other project.
+%\end{aquote}
+%
+They believe that strict contracts conflict with an agile way of working instead of supporting it, and suggest to adopt more flexible contracts, instead, also referred to as Time and Materials (T\&M) contracts\footnote{According to a T\&M contract, the contractor is being billed per hour regardless of the software project duration. If any additional features have to be developed the supplier charges just for the time spent by its employees working on a certain set of tasks [en.wikipedia.org]. This brings high flexibility to accommodate projects with evolving requirements, but also high uncertainty about the related costs.}. 
+The interviewees agree that a T\&M contract allows for a better adaptation to project changes, distribution of resources, and it creates shared ownership otherwise hindered by closed contracts:
+
+\begin{aquote}{...}
+...it is possible in an agile world to do this differently, but the preferred way would be not to buy content, but today commercial contract is that bought a certain content. It would be better if they buy a certain number of engineering hours.
+\end{aquote}
+
+They also argue in favour of a combination of a fixed price and T\&M contract, where stakeholders would agree on the product and cost estimation, but maintain high flexibility on how to produce it. This combination fulfils the need for flexibility and agility, but also better quality for the customer:
+
+\begin{aquote}
+I think it would be a more shared ownership when it was a full time and material work rather than contract. Because there need to be some checkpoints. I think there are so many unknowns in this project, but <the supplier company> is building a platform out of this project as well. So they are taking part of the risk here. The risk is on both side, but I think an agile project, a full agile project would be better. Then we could get to a situation earlier with quality.
+\end{aquote}
+
+All interviewees made it clear that good collaboration between their companies is important from a legal and contractual perspective to support inter-organisational CI\&D:
+
+\begin{aquote}
+a looser contract would be better and healthier for the project. I know Volvo Cars has its time schedule, you can fix the time, but then it is the costs and functionalities that floats and lead into more agile contract.
+\end{aquote}
+
 
 % To preserve an open approach to the project, a product manager at a software development company suggests a combination of an agile and fixed price contract by creating project branches to avoid overhead in the main project.
 
@@ -387,7 +417,20 @@ further states that it is hard for suppliers to negotiate with a T\&M or other f
 \vspace{.2cm}
 \subsubsection{Proposition 8: Standards and processes, based on industry-wide data and process standards benefit cross-organisational CI\&D}
 
-This proposition challenges the interviewees to experience the effects of industry-wide standards and processes in a inter-organisational setting where companies work together in software engineering projects using CI\&D. The interviewees were asked if they use industry-wise standards, and whether they find them beneficial for information sharing, which is important for cross-organisational CI\&D. The automotive industry is participating in various open source projects (e.g. AUTOSAR and GENIVI) and attempts to be good open source citizens. This development also enables companies to hire new employees easier, because open source knowledge is more common than knowledge of proprietary technology.
+This proposition challenges the interviewees to experience the effects of industry-wide standards and processes in a inter-organisational setting where companies work together in software engineering projects using CI\&D. The interviewees were asked if they use industry-wise standards, and whether they find them beneficial for information sharing, which is important for cross-organisational CI\&D. The automotive industry is participating in various open source projects (e.g. AUTOSAR and GENIVI) and attempts to be good open source citizens:
+
+\begin{aquote}{...}
+We are trying to be a good open source member by also upstreaming strategies, especially around GENIVI and Yocto. Here we find issues or improvements in the tools and we try to pass them back what we can. That is one of the strategies of the Supplier to work more open towards the open-source community as a give and receiver. We are working on that.
+\end{aquote}
+
+And also:
+
+\begin{aquote}{...}
+Open source is a very strong area related to CI [...]. ...the tools are open source and the automotive industry is trying to keep this an open-source as possible. There are some week areas, like code coverage tools. They are very week, unfortunately, so we have to use commercial tools for that.
+\end{aquote}
+
+This development also enables companies to hire new employees easier, because open source knowledge is more common than knowledge of proprietary technology.
+
 
 The interview results {\bf support the proposition}: industry standards and open source projects allow a common language and shared knowledge, therefore, benefits information sharing, which is important for inter-organisational CI\&D. This answer to proposition 8 is deduced from the following findings:
 
@@ -419,15 +462,7 @@ The biggest challenges that steam out of our study are:
 \end{itemize}
 
 
-\rog{
 
-Discussion:
-
-One thing that surprised us analyzing the interviews, was the need for open source to obtain both more transparency and get CI&D to run more smoothly. A Volvo employee said: “I believe CI&D is a model we must strive. I mean if you going to developing a very large system based on open standards. I think having this transparency should come natural, otherwise we will not. Volvo could order a Linux system and get this in a traditional way. We get binary report and get the delivery at the end and we could be happy. We will lose something, because we are building this software together and we have the rights to won and use them the future. Having Transparency and CI really gives a benefit to Volvo in the future reuse this assets, knowledge and experience.”. Another from Volvo is agree, but point out some problems as well, “Yes. Open source is a very strong area related to CI as you say. Like you said, the tools are open source and the automotive industry is trying to keep this an open-source as possible. There are some week areas, like code coverage tools. They are very week, unfortunately, so we have to use commercial tools for that.”  Also the suppliers try to be as open as possible: “… Some sources necessarily close. But we are trying to be as open as possible as requested.”.  It is also important to be active participation in the developing for open source: “We are trying to be a good open source member by also upstreaming strategies, especially around GENIVI and Yocto. Here we find issues or improvements in the tools and we try to pass them back what we can. That is one of the strategies of the Supplier to work more open towards the open-source community as a give and receiver. We are working on that.” But, this might even be easier for Volvo: “It is harder for the supplier. Since they in the end have to deliver the product on time and working after stream at least in the beginning it takes more time, because you need to align with the parties outside project. It might be a little bit problematic form them I think.”
-
-One of the strongest point is regarding knowledge of the tool, “Let’s say for example we are using proprietary technology. Are the Supplier or Volvo proprietary, so that means that one of the parties have to adjust to this technology. The other part is always going to be behind and have difficulty to understand how everything should work.”
-
-}
 
 %\pat{Add a summary and draw some conclusions}
 
