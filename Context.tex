@@ -18,19 +18,22 @@ between companies and their products. This evolution of the automotive industry,
 The stakeholders in the automotive ecosystem are classified as OEMs (e.g. Volvo Cars) and its suppliers (Tier-1 and Tier-2). In general the OEM is the coordinator and platform owner in the automotive ecosystem~\cite{KS15}. Tier-1 suppliers are considered direct suppliers to OEM and Tier-2 companies are a second level of suppliers, indirect to the OEM and directly connected to Tier-1. % and vice versa, hence, indirect to the OEM. \todo{is this relevant+understandable by ICSE readers?}
 
 \begin{figure}[htb]
+\vspace{-.2cm}
 \centering
 \includegraphics[width=\columnwidth]{figure/Closed-contract-collaboration.pdf}
-\caption{Collaboration based on closed contracts}
+\vspace{-.2cm}
+\caption{Collaboration based on contracts}
 \label{fig:closedContractCollaboration}
+\vspace{-.2cm}
 \end{figure}
 
 Therefore, OEMs experience heavy reliance on external developers and subcontractors; this complicates coordination throughout the entire development process. Expensive communication and coordination delays during integration are results of outsourcing significant parts of development to suppliers. %This form of exponentially growing feature content severely complicates ``big-bang" integration~\cite{Eklund2012}. The development is inevitably parallelized; this obviously also holds for the large amount of externally developed software, which is integrated as black-box functionality~\cite{Patrizio2016AAF_Chalmers,Broy2009AAF_TUM,Broy:2006:CAS:1134285.1134292}. 
 
-As shown in Figure~\ref{fig:closedContractCollaboration} the software engineering process follows the V-model, with the development on the left-hand side and verification on the right-hand side. The development at the level of components is parallelized among the different suppliers, and internal in-house development. The degree of parallelism can easily reach level 50 (i.e. 50 parallel developments). Once the collaboration between the OEM and its suppliers is regulated by closed-contract, the parallel developments represented in Figure~\ref{fig:closedContractCollaboration} start by signing a contract and then after months the large amount of externally developed software come back to the OEM and it is integrated as black-box functionality~\cite{Broy:2006:CAS:1134285.1134292}. 
+As shown in Figure~\ref{fig:closedContractCollaboration} the software engineering process follows the V-model, with the development on the left-hand side and verification on the right-hand side. The development at the level of components is parallelized among the different suppliers, and internal in-house development. The degree of parallelism can easily reach level 50 (i.e. 50 parallel developments). Once the collaboration between the OEM and its suppliers is regulated by contract, the parallel developments represented in Figure~\ref{fig:closedContractCollaboration} start by signing a contract and then after months the large amount of externally developed software come back to the OEM and it is integrated as black-box functionality~\cite{Broy:2006:CAS:1134285.1134292}. 
 %the produced ECUs will be provided back to the OEM after some months with few communication during the production period.
 This leads to the above mentioned ``big bang" integration~\cite{Eklund2012}. %: the developed Electronic Control Units (ECUs) (which include both hardware and software) come back to the OEM and integration starts. 
 It is at this stage that many misunderstandings, conflicting interpretations, wrong assumptions, etc. are discovered.
-It is easy to understand that closed-contract relations between the OEM and the suppliers can slow down the system-wide CI\&D.  %\todo{this last statement is disconnected from the rest of the story: miss the link between the mentioned integration problems and closed contracts}
+It is easy to understand that contract relations between the OEM and the suppliers can slow down the system-wide CI\&D.  %\todo{this last statement is disconnected from the rest of the story: miss the link between the mentioned integration problems and closed contracts}
 
 %The collaboration between the stakeholders in the ecosystem needs to improve the software quality and provide faster, cheaper, and more predictable development~\cite{herbsleb2016IntelligentTransparent}. 
 %
