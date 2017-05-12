@@ -1,10 +1,12 @@
+% !TEX root = main.tex
 \section{Context of the study}\label{sec:context}
 
 
 This work is carried out in the context of the {\em Next-Generation Electrical Architecture (NGEA)} and {\em Next-Generation Electrical Architecture - step 2 (NGEAs)} projects, funded by Vinnova~\cite{Vinnova}. 
-These projects are coordinated by Volvo Cars and involve the Chalmers University of Technology, some research centers in Sweden and many suppliers of the OEM, including Autoliv, Arccore, Combitech, Cybercom, Knowit, Prevas, \AA F-Technology, Semcom, and Qamcom. The projects aim to develop new software processes and proof of concepts to strengthen the competitiveness of the automotive industry in Sweden. The main objectives of the projects are to investigate (i) the transition of Volvo Cars towards continuous integration and deployment, (ii) new business models and innovative ways of working within the automotive ecosystem, and (iii) vehicles as part of system of systems. 
+These projects are coordinated by Volvo Cars and involve the Chalmers University of Technology, some research centers in Sweden and many suppliers of the OEM, including Autoliv, Arccore, Combitech, Cybercom, Knowit, Prevas, \AA F-Technology, Semcom, and Qamcom. The projects aim to develop new software processes and proof of concepts to strengthen the competitiveness of the automotive industry in Sweden. 
+The main objectives of the projects are to investigate (i) the transition of Volvo Cars towards continuous integration and deployment, (ii) new business models and innovative ways of working within the automotive \chg{ecosystem}{value-chain}, and (iii) vehicles as part of system of systems. 
 %Included in this project are sub projects or work packages that focus on 1) management, administration and business intelligence studies, 2) continuous deployment of architectural and development strategic viewpoints, and 3) automobiles as a system within an automotive software ecosystem \cite{Vinnova}. 
-In this paper we mostly focus on point (ii) even though there will be some impact on point~(i). Since OEMs are becoming software companies, nowadays the automotive domain is increasingly attracting the attention of the software engineering community.  
+In this paper we mostly focus on point (ii) \chg{even though there will be some impact on point~(i)}{and its impact on (i)}. Since OEMs are becoming software companies, nowadays the automotive domain is increasingly attracting the attention of the software engineering community.  
 %\todo{why relevant for ICSE?}
 
 The automotive ecosystem consists of inter-organizational collaborations among automotive suppliers. It is characterized by relying on complex supplier networks and strong dependence on hardware and software development \cite{Knauss2014d}.
@@ -15,7 +17,7 @@ Nowadays, a vehicle is a {\em driving software package} as compared to the vehic
 ~\cite{ConnectedVehicle2012,hbr2015hardwaresoftware,Mossinger2010SoftwareAutomotive,Broy:2006:CAS:1134285.1134292} %. In the past, hardware was the differentiator 
 between companies and their products. This evolution of the automotive industry, illustrated by the exponential increase of software, creates new challenges regarding software integration, development, deployment, and maintenance. Therefore, its development needs to support the related integration and evolution of time~\cite{Broy:2006:CAS:1134285.1134292,qualman2009socialnomics,JansenTale2009}. The increasing amount of stakeholders involved in the software development projects imposes additional challenges to the architecture teams, as the development and design literally cannot be controlled, or even understood, in detail by a single group any more. 
 
-The stakeholders in the automotive ecosystem are classified as OEMs (e.g. Volvo Cars) and its suppliers (Tier-1 and Tier-2). In general the OEM is the coordinator and platform owner in the automotive ecosystem~\cite{KS15}. Tier-1 suppliers are considered direct suppliers to OEM and Tier-2 companies are a second level of suppliers, indirect to the OEM and directly connected to Tier-1. % and vice versa, hence, indirect to the OEM. \todo{is this relevant+understandable by ICSE readers?}
+The stakeholders in the automotive \chg{ecosystem}{value-chain} are classified as OEMs (e.g. Volvo Cars) and its suppliers (Tier-1 and Tier-2). In general the OEM is the coordinator and platform owner in the automotive ecosystem~\cite{KS15}. Tier-1 suppliers are considered direct suppliers to OEM and Tier-2 companies are a second level of suppliers, indirect to the OEM and directly connected to Tier-1. % and vice versa, hence, indirect to the OEM. \todo{is this relevant+understandable by ICSE readers?}
 
 \begin{figure}[htb]
 \vspace{-.2cm}
