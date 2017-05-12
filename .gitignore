@@ -1,0 +1,11 @@
+*.log
+*.bib.bak
+*.bib.sav
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+main.pdf
+*.synctex.gz
+
