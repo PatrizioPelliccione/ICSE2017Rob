@@ -1,32 +1,40 @@
 \section{Related Works}\label{sec:relatedWorks}
 
-\subsection{Continuous Integration and Deployment}
+\todo{mention somewhere Adaptive autosar and OTA}
 
-Continuous Integration (CI) is a development practice that assumes each developer to frequently commit their new code into a shared repository.
-Every commit, triggers an automated build that verifies that the committed code is of sufficient quality by running various tests defined within the project. This enables faster feedback and allows the development team to detect problems early \cite{Fowler2006}.
-By this, CI promises to improve release frequency and predictability, to increase developer productivity and communication \cite{Stahl2014}. 
+\subsection{Continuous Integration and Delivery}
 
+CI %Continuous Integration (CI) 
+is a development practice that assumes that developers frequently commit their new code into a shared repository. 
+%Every commit triggers an automated build that verifies that the committed code is of sufficient quality by running various tests defined within the project. This enables faster feedback and allows the development team to detect problems early \cite{Fowler2006}.
+%By this, CI promises to improve release frequency and predictability, to increase developer productivity and communication \cite{Stahl2014}. 
 While there is %a relatively 
-rich literature on how to implement and setup a small scale continuous integration for a project (e.g. \cite{Fowler2006,Neely2013}), there is lack of scientific support for how to scale such setups and also how to deal with involved hardware and complexities in embedded software \cite{Debbiche2014}. There are however works that report on challenges with scaling of continuous integration \cite{Roberts2004,Rogers2004} as well as with the applicability of agile approaches in the embedded domain \cite{Eklund2012a}.
+rich literature on how to implement and setup a small scale continuous integration for a project (e.g. \cite{Fowler2006,Neely2013}), there is lack of scientific support for how to scale such setups and also how to deal with involved hardware and complexities in embedded software \cite{Debbiche2014}. There are, however, works that report on challenges with scaling of continuous integration \cite{Roberts2004,Rogers2004} as well as with the applicability of agile approaches in the embedded domain \cite{Eklund2012a}.
 
 Related to Continuous Integration are Continuous Delivery and Continuous Deployment.
 Continuous delivery is often referred to as ``a software development practice in which the software is kept in a state that, in principle, it could be always released to its users'' \cite{Humble2010}. 
 In contrast, Continuous Deployment would require to not only deliver the software, but also to deploy it into the user's runtime.
 Thus, Continuous Deployment becomes important when considering over the air updates to end-users.
-Our paper, however, focuses on the continuous delivery between supplier and OEM, since we argue that this is the natural consequence of an OEM embracing system-wide continuous integration.
+Our paper, however, focuses on the continuous delivery between suppliers and OEM, since we argue that this is the natural consequence of an OEM embracing \chg{system-wide}{inter-organizational} continuous integration.
 
-Rissanen and M\"unch \cite{Rissanen2015} addressed the challenges for companies in the domain of B2B making the transition towards continuous delivery and identified key aspects in technical, procedural and customer areas. While this study provide relevant insights it does not take into account the challenges involved in embedded and autonomous systems. 
+Rissanen and M\"unch \cite{Rissanen2015} addressed the challenges for companies in the domain of B2B making the transition towards continuous delivery and identified key aspects in technical, procedural, and customer areas. While this study provides relevant insights, it does not take into account the challenges involved in embedded and autonomous systems. 
 
 
-\subsection{Ecosystem and Transparency}
-Software ecosystems have been discussed from three distinct perspectives: Open source
-\cite{Scacchi2009}, modelling and architecture (e.g. software evolution, architecture, and product lines \cite{Bosch2009}), and managerial perspectives (e.g. business aspects and co-innovation \cite{Jansen2012b}). 
-Some degree of openness and transparency is a precondition for software ecosystems. Different degrees exist, from widely proprietary ecosystems to pure open source ecosystems \cite{Angeren2012,Jansen2012c}.
+\subsection{Transparency between Actors in Software Ecosystems}
+%\del{{The literature as discussed} software ecosystems %\del{have been discussed} from \ins
+%{at least}\eric{Which others could be considered?} three distinct perspectives:} 
+Open source~\cite{Scacchi2009}, modelling and architecture (e.g. software evolution, architecture, and product lines \cite{Bosch2009}), and managerial perspectives (e.g. business aspects and co-innovation \cite{Jansen2012b}) %\ins{
+are key topics of software ecosystems, %}\chg{.  
+%Some degree of}{, 
+and we consider %} 
+openness and transparency %\chg{is a}{
+as %} %\chg{precondition for software ecosystems}{
+key properties. %}. 
+Different degrees exist, from widely proprietary ecosystems to pure open source ecosystems \cite{Angeren2012,Jansen2012c}.
 Jansen et al. \cite{Jansen2012a}, Bosch et al. \cite{Bosch2009}, and Manikas et al. \cite{Manikas2013b} discuss how to analyze software ecosystems and relationships among the actors of ecosystems. 
 We consider the notion of a software ecosystem as a useful perspective on development work in the automotive software value-chain \cite{Knauss2014d} and by considering these related works, our study focuses on the specific interaction between automotive OEM and supplier.
 
 One important aspect in our interviews has been the contract between both parties and the requirements defined there with respect to time and functionality. 
-%<<<<<<< HEAD
 Not surprisingly, Requirements Engineering (RE) practice in traditional proprietary software projects (as e.g. described in \cite{Robertson1999,Ruhe2010}) differs significantly from the way requirements are handled in open source projects, where requirements are post-hoc assertions of functional capabilities and included into the system feature set after their implementation \cite{Scacchi2009}.
 %Knauss et al. indicate that requirements flows in open commercial ecosystems include a more open way of communicating requirements than in traditional approaches to RE, while  the requirement processes and flows are different than in open source projects \cite{KYB+2016}. 
 %=======
@@ -38,11 +46,12 @@ Not surprisingly, Requirements Engineering (RE) practice in traditional propriet
 
 
 Transparency and emergent collaboration of stakeholders play a major role in driving requirements discussion and decision-making.
-To our knowledge however, research has so far mainly investigated emergent developers \cite{Minto2007,Haenni2014,Sadi2015} and emergent knowledge \cite{Treude2012}, while only few and more recent works exist that start to investigate the effect of emergent contributors on requirements \cite{Kwan2011}, across organizations \cite{Linaker2016,KYB+2016}, and its implications with respect to transparency \cite{Dabbish2013,Hosseini2016}. 
+To the best of our knowledge, however, research has so far mainly investigated emergent developers~\cite{Minto2007,Haenni2014,Sadi2015} and emergent knowledge \cite{Treude2012}, while only few and more recent works exist that start to investigate the effect of emergent contributors on requirements \cite{Kwan2011}, across organizations \cite{Linaker2016,KYB+2016}, and its implications with respect to transparency \cite{Dabbish2013,Hosseini2016}. 
 We consider this an important research direction, since stakeholders with in-depth domain knowledge, the implicit knowledge about customer needs, their business domain and the system’s environment \cite{Damian2013}, must participate even when they span team or geographic boundaries \cite{boden2009bridging}.
 In line with our findings, open communication channels have shown their value for building communities around healthy ecosystems  \cite{Kilamo2012}. 
 %<<<<<<< HEAD
-However, our results indicate that this transparency and information sharing needs to be carefully balanced: When planning transparency, one should specifically understand stakeholders, %of information, 
+However, our results indicate that this transparency and information sharing needs to be carefully balanced: when planning transparency, one should specifically understand %\ins{its involved}\eric{why only those?}
+stakeholders of information, 
 as well as its usefulness, quality, and meaningfulness \cite{Hosseini2016}.
 %=======
 %However, our results indicate that this transparency and information sharing needs to be carefully balanced: When planning transparency, one should specifically understand stakeholders  of information, as well as its usefulness, quality, and meaningfulness \cite{Hosseini2016}.
