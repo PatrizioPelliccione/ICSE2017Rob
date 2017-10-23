@@ -116,6 +116,10 @@
     $^{\ref{#1}}$%
 }
 
+%\newcommand{\company}{Volvo Cars}
+\newcommand{\company}{XXX}
+
+
 \usepackage{listings}
 
 % colors
@@ -165,7 +169,8 @@
 
 \title[Transparency and Contracts]{
 %Transparency Trade-offs: Continuous Integration and Delivery in the Automotive Software Value-Chain
-Transparency and Contracts: Continuous Integration and Delivery in the Automotive Value-Chain}
+Transparency and Contracts: Continuous Integration and Delivery in the Automotive %\textcolor{red}{Value-Chain} 
+Ecosystem}
 
 
 
@@ -208,25 +213,28 @@ robvdvalk@gmail.com, patrizio.pelliccione@gu.se, p.lago@vu.nl, heldal@chalmers.s
 
 
 
-\maketitle
+
 \begin{abstract}
-\del{The automotive industry is rapidly changing thanks to both new technological challenges, like autonomous vehicles, connected cars and electrification, and new players that are entering the market, like Tesla, Google, Apple, and Uber. }
+%\del{The automotive industry is rapidly changing thanks to both new technological challenges, like autonomous vehicles, connected cars and electrification, and new players that are entering the market, like Tesla, Google, Apple, and Uber. }
 Most of the innovation in automotive is nowadays coming from electronics and software.
 %\del{ and as a matter of fact OEMs are becoming software companies. }
-The pressure of reducing the time to market and %\del{improving} \ins
-{increasing} flexibility while keeping quality are leading motivations for these companies to embrace system-wide Continuous Integration and Delivery. 
+The pressure of reducing \del{the} time to market and %\del{improving} \ins
+{increasing} flexibility while keeping quality are leading motivations for these companies to embrace \ugh{system-wide} Continuous Integration and Delivery\ins{ (CI\&D), which in the scope of complex automotive value-chains, implies inter-organizational CI\&D}.
 
 In this paper, we investigate the challenges and impediments %\del{system-wide}
-{posed by} \ins{inter-organizational} Continuous {Integration and} Delivery (CI\&D) %\del{in the automotive ecosystem} 
+{posed by} \ugh{inter-organizational} \del{Continuous {Integration and} Delivery (}CI\&D\del{)} %\del{in the automotive ecosystem} 
 {in the automotive domain,}
 i.e. continuous software development that involves agile interaction between an OEM {(the car manufacturer)} and its software suppliers. 
 In particular, we focus on {\em contracts} that regulate the agreements between these companies 
 and {\em transparency} intended as the degree/level of information that is shared between the various companies in the %\chg{ecosystem}{
 value-chain. %}. 
-\ins{The main findings of this study show that (i) inter-organizational transparency is considered positive but not a necessary condition for inter-organizational CI\&D, (ii) transparency has positive effects on information sharing among different companies, and (iii) contracts are an impediment for inter-organizational CI\&D.}
+%\ins{
+The main findings of this study show that (i) inter-organizational transparency is considered positive but not a necessary condition for inter-organizational CI\&D, (ii) transparency has positive effects on information sharing among different companies, and (iii) contracts are an impediment for inter-organizational CI\&D. %}
 The results of the study provide useful insights for practitioners that work in similar settings. %a similar \ugh{ecosystem}. 
 In addition, the identified challenges and impediments define a research agenda for researchers.
 \end{abstract}
+
+
 
 %\begin{IEEEkeywords}
 %\ugh{Automotive ecosystem}\eric{revise keywords?}, relationships OEM suppliers, transparency, win-win, new business model, contracts.
@@ -237,6 +245,8 @@ In addition, the identified challenges and impediments define a research agenda 
 
 \keywords{continuous integration and delivery; transparency; contracts; information sharing; automotive; interview survey}
 
+\maketitle
+
 \input{Introduction.tex}
 \input{Context.tex}
 \input{Related_Work.tex}
@@ -244,14 +254,21 @@ In addition, the identified challenges and impediments define a research agenda 
 \input{Results.tex}
 
 \section{Threats to Validity}\label{sec:threatsToValidity}
+Lincoln and Guba~\cite{Lincoln1985} argue that qualitative research should be, objective, reliable, and internally and externally valid, all discussed in the following.% Below, we discuss the validity threats of this work and how we addressed them.
 
-\todo{Add threats to validity}
+{\bf Objectivity} ensures that the conclusions depend on the ``subjects and the conditions of the case'' rather than on the researcher~\cite{Miles}. The emphasis here is on the replicability of a study by other researchers. A possible threat to objectivity relates to the biases stemming from researcher effects on the case. To mitigate this threat, we carefully designed the study guide and strictly followed it in its execution, as explained in Section~\ref{sec:researchMethod}. 
+
+%The underlying issue of {\bf reliability} is whether the process of study is consistent over time across researchers and methods~\cite{Miles}. 
+To ensure the {\bf reliability} of our study, the study design (explained in Section~\ref{sec:researchMethod}) was reviewed by an expert in the field of empirical software engineering. In addition, the results of coding, conducted by the first author, were and peer-reviewed by a second author, and supported by a dedicated tool. These tactics helped us ensure that the study is executed with reasonable quality.
+
+\textbf{Internal validity} aims at ensuring that the collected data enables researchers to draw valid conclusions~\cite{Creswell2003}. This validity relates to ``how'' the research is carried out, and whether the used methods are credible. In this study, the interviews were mainly conducted by a single researcher and hence subjective interpretations might exist. To mitigate this threat, the interview guide was checked and validated by senior researchers experienced in software engineering, empirical studies and agile methods in automotive.
+
+\textbf{External validity} defines to what extent findings from the study can be generalized~\cite{Creswell2003}. A threat to generalizability of results is that the study was conducted at two companies in the automotive industry, which means the findings are specific to this study and this domain. We however consider this study as a first in a series, and make available the replication package so that other researchers can replicate the study in other companies and in other domains.
+
 
 \input{Discussion.tex}
 %\input{Related_Work.tex}
 \input{Conclusion.tex}
-
-			
 
 \balance
 

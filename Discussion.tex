@@ -1,18 +1,22 @@
 \section{Discussion}\label{sec:discussion}
 
 %\pat{How much upfront? What are the key artifacts that should be maintained?}
+%\todo{I think this section should explain the implications of our results for SE.}
+In this section we rely on Figure~\ref{fig:results} to discuss our findings. Where applicable, the discussion is organized from the perspective of industry (Section~\ref{sec:industry}) and academic research (Section~\ref{sec:research}).
 
+Overall, we did not find a strong correlation between transparency and CI\&D, and in fact Proposition 1 has been rejected. However, in the specific of {\em inter-organizational} CI\&D, we found that increased information transparency (cf. left-hand side in the figure) %leads to having more information available among the project members that belong to different companies. Transparency
+can have negative effects on privacy: by increasing transparency, organizations should be more aware of which information is sensitive and hence should or shouldn't share.
+At the same time, transparency  positively influences project quality, trust, inter-organizational awareness and shared project understanding. This creates a good environment for inter-organizational CI\&D.
 
-\ins{In this work we did not found a strong correlation between transparency and CI\&D (in fact Proposition 1 has been rejected). However, since we are interested in inter-organizational CI\&D, we found that increased transparency leads to having more information available among the project members that belong to different companies. Transparency creates positive effects in terms of efficiency, trust, and mutual understanding. This creates a good condition for inter-organizational CI\&D.}
-
-\ins{In this work we did not analyzed functional safety assessment when CI\&D is involved. This is  interesting topic for future works; this topic would merit a dedicated study.}
+%\del{In this work we did not analyze functional safety assessment when CI\&D is involved. This is  interesting topic for future works; this topic would merit a dedicated study.}
+Further, we found that when information transparency and inter-organizational CI\&D coexist, synergy (agile collaboration) increases, too. This confirms the potential benefits of applying agile development methodologies in ecosystems (like the automotive one) that target safety-critical systems and that are traditionally heavily controlled. In doing so, however, agile methodologies should remain conform to standards like the ISO 26262~\cite{iso26262} - a future challenge for both research and practice.
 %\todo{Add discussion about functional safety assessment when CI\&D is involved. Check the works of Bruce Power Douglass, who pushes agile for ISO26262 for several years. He points out that the V model is more about relationships between work products and does not explicitly forbid the agile approach.}
 
-\ins{In the reminder of this section we discuss insights for practitioners (Section~\ref{sec:industry}) and a research agenda for researchers (Section~\ref{sec:research}).}
+%\del{In the following we discuss insights for practitioners (Section~\ref{sec:industry}) and a research agenda for researchers (Section~\ref{sec:research}).}
 
 \subsection{Industry Perspective}\label{sec:industry}
 
-This paper presented a pilot project of Volvo Cars and one of its suppliers to investigate innovative ways of working and innovative collaboration models of the two organizations. 
+This paper presented a pilot project of \company{} and one of its suppliers to investigate innovative ways of working and innovative collaboration models of the two organizations. 
 Industries %\chg{that are thinking or that are already in the process of}{
 interested in %} 
 opening their platforms towards an ecosystem perspective, %\del{, or that simply are joining ecosystems} 
@@ -22,31 +26,33 @@ on adopting more agile and open collaborations. %}. \todo{I think these referenc
 %The proposition challenges interviewees to critically evaluate the impact of cross-organisational transparency on the business model strategy of their organisation. They were asked about the impact on the business model strategy on a functional and organisational level. 
 %In general, the interviewees do not have an overview of the business model strategies of their organisation. 
 %In addition to the findings already discussed above, in this section we want 
-It is important to highlight that \chg{system-wide}{inter-organizational} CI\&D could have an impact on both organizational and functional levels. 
+It is important to highlight that inter-orga\-ni\-za\-tional CI\&D could have an impact at both organizational and functional levels. 
 %had a bigger impact in the early stage of the pilot project, but is getting less now the project is ongoing. 
 %
 %However, from our study it emerges that system-wide CI\&D %the interview results support the proposition, and cross-organisational transparency and CI\&D 
 %could have an impact on business model strategies. %This answer to proposition 9 is deduced from the following findings:
 %
 %\noindent {\bf Impact on organisational level.} The organisational 
-The {\em impact on organisational level} is perceived differently by the two participating companies. For Volvo Cars, it is perceived as one of the many projects and since they do not have the integration and end-responsibility for the product, it has not a big impact. However, for the supplier company, it is a high-risk experiment due to the complexity of the project. The employees of the supplier confirm that it has the highest complexity level the company accepted in its history.
+The {\em impact at an organisational level} is perceived differently by the two participating companies. For \company{}, it is perceived as one of the many projects and since they do not have the integration and end-responsibility for the product, it has not a big impact. However, for the supplier company, it is a high-risk experiment due to the complexity of the project. The employees of the supplier confirm that it has the highest complexity level the company accepted in its history.
 
 %Th impact on functional level.} On functional level, 
-The interviewees of both companies agree that the {\em impact on functional level} of \chg{system-wide}{inter-organizational} CI\&D %effects derived from the impact of cross-organisational transparency and CI\&D 
-can be quantified in gain-in-efficiency, quality, and time-to-market. Also, CI\&D has less side effects than intermittent integration.\del{, in case of big-bang integration.}  
+The interviewees of both companies agree that the {\em impact at a functional level} of inter-organizational CI\&D %effects derived from the impact of cross-organisational transparency and CI\&D 
+can be quantified in gain-in-efficiency, quality, and time-to-market. Also, CI\&D has less side effects than intermittent integration.%\del{, in case of big-bang integration.}  
 
-Finally, the interviewees state that, to date, \chg{system-wide}{inter-organizational} CI\&D is not mature enough to see or foresee a big impact on business model strategies. 
+For what concerns contracts, our findings suggest that traditional contracts are an impediment to inter-organizational CI\&D, but work well for what concerns negotiation and IPR. Innovative flexible contracts and/or ways of working are needed.
+
+Finally, the interviewees state that, to date, inter-organizational CI\&D is not mature enough to predict the impact on collaboration models. 
 
 \subsection{Academic Perspective}\label{sec:research}
 
-\todo{Improve the research agenda. It is introduced but not elaborated in details}
+%\todo{Improve the research agenda. It is introduced but not elaborated in details}
 
 Researchers that are interested in scaling agile methodologies to the entire organization or to inter-organizational collaborations might find in this paper interesting findings coming from an industrial project in a challenging domain that is witnessing a profound transformation in the last years. 
 
-Researchers working on ecosystems can find in this paper an interesting example of ecosystem in the challenging automotive domain. Innovative ways to share information and knowledge within the ecosystem are needed. %We also considered only one OEM and one supplier. 
-We also expect that different levels of sharing will be required within the same ecosystem, according to the degree of closeness of the OEM, to the level of trust, and to the purpose of the collaboration.
-
-For what concerns contracts, our findings suggest that traditional contracts are an impediment to \chg{system-wide}{inter-organizational} CI\&D. However these types of contracts work well for what concerns negotiation and IPR. Innovative contracts and/or ways of working are needed.
+%\todo{Below added the SE implications.}\\
+Figure~\ref{fig:results} emphasizes (in dark-blue color) three aspects that we identified as the most relevant for software engineering researchers, along with the related indirect effects (in light-blue).
+In particular, (1) to achieve the promised inter-organizational synergy, ecosystems need {\bf harmonized tooling} that can flexibility inter-operate to a.o. mitigate the (perception of) physical distance and implement (efficient) information sharing. Advances in service-oriented technologies, cloud integration and seamless software adaptation can provide the building blocks for such tooling. (2) As mentioned in the beginning of this section, further research is needed to  create effective {\bf information transparency}. Researchers working in software ecosystems can find in this paper an interesting example of ecosystem in the challenging automotive domain. Innovative ways to share information and knowledge within the ecosystem are needed. %We also considered only one OEM and one supplier. 
+We also expect that different levels of sharing will be required within the same ecosystem, according to the degree of closeness of the OEM, to the level of trust, and to the purpose of the collaboration. Platforms are already being developed mostly addressing different levels of data sharing (e.g. KAVE~\footnote{\url{http://kave.io}}). Software engineering approaches are needed to define the sharing models and how to translate them into e.g. information generalization for controlled sharing. Further, approaches for information access should offer techniques to trace the individual contribution within the project shared in the ecosystem, and generate holistic project views for shared understanding. If present, these two techniques would help increasing project quality. Finally, our study highlighted how (3) the inter-organizational {\bf adoption of open-source software and standards} helps create a shared knowledge base and common language, which in turn further facilitate information sharing. Research in knowledge management applied to e.g. software architecture~\cite{akmbook} barely touched upon this topic.
 
 % {\bf Industry Perspective.} 
 %  To preserve an open approach to the project, a product manager at a software development company suggests a combination of an agile and fixed price contract by creating project branches to avoid overhead in the main project.

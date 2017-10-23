@@ -9,7 +9,7 @@ At the same time, new major players are emerging in the field, like Google\footn
 Apple\footnote{\url{https://en.wikipedia.org/wiki/Apple_electric_car_project}}, %~\cite{Apple,Apple2},
  Tesla, and Uber, while Original Equipment Manufacturers (OEMs) are increasingly turning into software companies. 
 Historically, software was introduced in cars to optimize the control of the engine. 
-Today, according to industry experts\footnote{\url{http://www.electronics-eetimes.com/news/innovation-car-90-comes-electronics-and-software}}, 80\% to 90\% of the innovation in the automotive industry is based on electronics, a big part of which is software~\cite{ESEM2016}. 
+Today, according to industry experts\footnote{\url{https://tinyurl.com/y9jnoupd}}, 80\% to 90\% of the innovation in the automotive industry is based on electronics, a big part of which is software~\cite{ESEM2016}. 
 
 %\ins{
 Traditionally, automotive system development is characterized by a complex supply-chain.
@@ -19,10 +19,10 @@ This means that the knowledge and competence of building a car is spread across 
 %}
 
 %\ins{
-To manage this complexity, the V-model\footnote{Originally developed for defense applications by the German DoD - \url{http://www.v-modell-xt.de/}} %\ins{
+To manage this complexity, the V-model\footnote{Originally developed for defense applications by the German DoD - \url{www.v-modell-xt.de}} %\ins{
 is the de-facto development method in the automotive domain as also implicitly suggested by the ISO 26262 functional safety standard~\cite{iso26262}.
-Consequently, the overall development organization is split in different groups, both by abstraction and competency (e.g. top level requirements,
-architecture, design and software development, hardware, mechanical parts).%\todo{Previous sentence is unclear.}
+Consequently, the overall development organization is split in different groups, both by abstraction and competence (e.g. top level requirements,
+architecture, design and software development, hardware, mechanical parts). %\todo{Previous sentence is unclear.}
 This can cause a silo effect that hinders information sharing and synergy. %}
 
 
@@ -38,15 +38,15 @@ This can cause a silo effect that hinders information sharing and synergy. %}
 %This means that the knowledge and competence of building a car is spread across an ecosystem composed of several different companies, each with potentially different internal organizations, objectives, competences, constraints, cultures, languages, and geographical locations. 
 
 %\ins{
-Due to an increasing market demand~\cite{olsson2012climbing} and the success of agile methodologies~\cite{laanti2011agile}, large-scale systems development organizations adopt agile practices~\cite{jalali2010agile} such as continuous integration and delivery (CI\&D), which promise shorter time to market and improved quality~\cite{olsson2012climbing}.
-OEMs especially expect increased flexibility and shorter cycle times.
+Due to an increasing market demand~\cite{olsson2012climbing} and the success of agile methodologies~\cite{laanti2011agile}, large-scale system development organizations adopt agile practices~\cite{jalali2010agile} such as continuous integration and delivery (CI\&D), which promise shorter time to market and improved quality~\cite{olsson2012climbing}.
+OEMs in particular, do expect increased flexibility and shorter cycle times.
 However, in order to fully benefit from these approaches, OEMs need to apply them %\ins{
 beyond the scope of individual teams, towards the scope of the complete automotive system,  %}\del{system-wide} \todo{add short definition}\eric{bit reluctant to add a formal definition here. Does this improved characterization suffice?} 
 and to some extent even across organizational boundaries in their (software) value-chain. %}
 %\ins{
 According to Hosseini et al.~\cite{Hosseini2016}, it is crucial to understand the intended degree of information to be shared between partners in the value-chain, especially with respect to accountability, openness, and efficiency~\cite{Ball2009}.
 Hosseini et al. refer to this as \emph{transparency} and note that the crucial aspects for decision making are information accessibility and availability~\cite{Hosseini2016,Turilli2009}.
-To our knowledge, this perspective has not been applied to system-wide CI\&D. %}
+To our knowledge, this \ins{critical} perspective has not been applied to inter-organizational CI\&D. %}
 %Nowadays OEMs have an increasing and strong motivation
 %to embrace system-wide Continuous Integration and Delivery (CI\&D) in order to improve
 %in flexibility and cycle time, despite the challenges mentioned above. 
@@ -55,7 +55,7 @@ To our knowledge, this perspective has not been applied to system-wide CI\&D. %}
 
 In this paper we investigate %\todo{what we claim here is not fully aligned with the RQs} 
 %\del{what are the} 
-challenges and impediments of system-wide CI\&D in automotive system-development. 
+challenges and impediments of inter-organizational CI\&D in automotive system-development. 
 %scaling software engineering agility \todo{added SE: to make the SE relevance more evident} beyond the company boundaries.  
 %However, our hypothesis, which is beyond the motivation of this paper, is that {\bf closed contracts are a killer for cross-organizations CI\&D}.
 Specifically, we focus on {\em contracts} that regulate the agreements between these companies 
@@ -63,7 +63,6 @@ Specifically, we focus on {\em contracts} that regulate the agreements between t
 and {\em {inter-organisational} transparency} intended as the degree/level of information that is shared between the various companies %\ins{
 involved in the development and its associated value-chain. %} \del{in the ecosystem}. 
 %\todo{we could replace ecosystem with 'involved in the development'} 
-
 %Focusing on the engineering of the software of modern and near future vehicles, o
 Our study %\del{aims at providing an answer to}
 addresses the following research questions:
@@ -84,33 +83,41 @@ addresses the following research questions:
 %automotive software ecosystem?
 \begin{itemize}
 %\item {\em RQ1: What is the impact on business model strategies?}
-\item {\em RQ1: What are the risks and/or benefits of increasing inter-organisational transparency?}
+\item {\em RQ1: What are \del{the} risks and/or benefits of increasing inter-organisational transparency?}
 \item {\em RQ2: Is there a lack or overload of information that is exchanged across organizations?} 
-\item {\em RQ3: Are contracts an impediment for scaling agility across company boundaries, and 
-are industry-wide standards and processes shared among organizations an enabler?} 
+\item {\em RQ3: Are contracts an impediment for scaling agility across company boundaries?} %, and 
+%are industry-wide standards and processes shared among organizations an enabler?} 
+\item {\em RQ4: Are industry-wide standards and processes shared among organizations an enabler?}
+%\todo{I am still not happy to have 2 questions in 1 RQ.}
 %what are the challenges of changing this collaboration model?} %What are the risksbenefits of increasing inter-organisations transparency?} %ch existing concepts can benefit inter-organisational transparency?}
 %\item {\em RQ3: What are the main challenges while improving inter-organisations transparency?}
 %\item {\em RQ3: What can be the impacts on business model strategies?}
 \end{itemize}
 %\end{itemize}
 
-To give an answer to these research questions we performed semi-structured interviews within Volvo Cars and 
+To give an answer to these research questions we performed semi-structured interviews within \company{} %Volvo Cars 
+and 
 %Delphi 
-one of their larger suppliers in the context of a pilot project within Volvo Cars. This pilot project is experimenting a more open and transparent way of working between these two companies. Therefore, this pilot project is an ideal setting for investigating the effects of changing the way of collaborating between OEMs and suppliers.  
+one of their larger suppliers in the context of a pilot project within \company{}. % Volvo Cars.
+This pilot project is experimenting a more open and transparent way of working between these two companies. Thus, this pilot project is an ideal setting for investigating the effects of changing the way of collaborating between OEMs and suppliers.  
 The pilot project is a large and complex project with over 200 engineers and developers. 
 % and engineers if one count all types . 
 %There are close to 30 different SCRUM and Agile teams. %It is classified\todo{By whom? What does this mean?} as the highest degree of complexity that can be done between the companies. 
-In an attempt to reduce the complexity, developers from both companies work in the same office space, and they are organized in around 30 different agile teams. %\todo{scrum is (!) agile: is the difference relevant?}
-
+In an attempt to reduce the complexity, developers from both companies work in the same office space, and they are organized in about 30 different agile teams. %\todo{scrum is (!) agile: is the difference relevant?}
 %\ins{We anticipate the main findings of the study below} \del
-{The main findings of the study are the following}:
-\begin{itemize}
-\item {\em RQ1} - Inter-organisational transparency is not a necessary condition for inter-organizational CI\&D but considered positive for various reasons. %and creates positive synergy effects in terms of efficiency, trust, and mutual understanding while avoiding useless stressful situations. Transparency is also considered positive in terms of increasing the overall the project quality. 
+The main findings of our study are:\\
+%\begin{itemize}
+%\item 
+\noindent {\em RQ1} - Inter-organisational transparency is not a necessary condition for inter-organizational CI\&D but considered as positive for various reasons. %and creates positive synergy effects in terms of efficiency, trust, and mutual understanding while avoiding useless stressful situations. Transparency is also considered positive in terms of increasing the overall the project quality. 
 %\ins{
-While strategies exist that facilitate information sharing  across organizations, the automotive industry experiences difficulties to share information, manage responsibilities, and intellectual properties at the pace required for CI\&D. %}
-\item {\em RQ2} - Transparency has positive effects on information sharing among the members of the project that belong to different companies. However, transparency as such does not help providing a holistic project overview.
-\item {\em RQ3} - Contracts are an impediment for inter-or\-ga\-nisational CI\&D; however, contracts also help facilitating negotiations between different organizations. Industry-wide standards and processes and open source initiatives are seen as positive for promoting collaboration, knowledge sharing, and communication.
-\end{itemize}
+While strategies exist that facilitate information sharing  across organizations, the automotive industry experiences difficulties to share information, manage responsibilities, and intellectual properties at the pace required for CI\&D.\\ %}
+%\item 
+\noindent {\em RQ2} - Transparency has positive effects on increasing information sharing among the members of the project that belong to different companies. However, transparency as such does not help providing a holistic project overview. Finally, overload of information is unlikely to be considered a problem.\\
+%\item 
+\noindent {\em RQ3} - In their current form, contracts are an impediment for inter-or\-ga\-nisational CI\&D; however, they also help facilitating negotiations between different organizations. \\
+%\item 
+\noindent {\em RQ4} - Industry-wide standards and processes and open source initiatives are seen as positive for promoting collaboration, knowledge sharing, and communication.
+%\end{itemize}
 %The findings of the paper are ...\pat{findings}
 
 %The biggest challenges that emerged are: 
