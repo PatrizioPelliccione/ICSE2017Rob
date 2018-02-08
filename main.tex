@@ -48,7 +48,10 @@
 %\documentclass[10pt, conference, compsocconf]{IEEEtran}
 %\documentclass[10pt,conference]{IEEEtran} 
 %\documentclass{sig-alternate}
-\documentclass[sigconf,review, anonymous]{acmart}
+%\documentclass[sigconf,review, anonymous]{acmart}
+\documentclass[sigconf]{acmart}
+
+
 \acmConference[ICSE 2018]{40th International Conference on Software Engineering}{May 27--June 3, 2018}{Gothenburg, Sweden}
 \acmYear{2018}
 
@@ -174,18 +177,45 @@ Ecosystem}
 
 
 
-\author{\IEEEauthorblockN{Rob van der Valk\IEEEauthorrefmark{1}, Patrizio Pelliccione\IEEEauthorrefmark{2}, Patricia Lago\IEEEauthorrefmark{1}, Rogardt Heldal\IEEEauthorrefmark{2}\IEEEauthorrefmark{3}, and Eric Knauss\IEEEauthorrefmark{2}, Jacob Juul\IEEEauthorrefmark{4}}
-\IEEEauthorblockA{\IEEEauthorrefmark{2}Chalmers University of Technology $|$ University of Gothenburg, Sweden}%\\
+%\author{\IEEEauthorblockN{Rob van der Valk\IEEEauthorrefmark{1}, Patrizio Pelliccione\IEEEauthorrefmark{2}, Patricia Lago\IEEEauthorrefmark{1}, Rogardt Heldal\IEEEauthorrefmark{2}\IEEEauthorrefmark{3}, and Eric Knauss\IEEEauthorrefmark{2}, Jacob Juul\IEEEauthorrefmark{4}}
+%\IEEEauthorblockA{\IEEEauthorrefmark{2}Chalmers University of Technology $|$ University of Gothenburg, Sweden}%\\
 %Department of Computer Science and Engineering,
 %Gothenburg, Sweden}
 %\and
-\IEEEauthorblockA{\IEEEauthorrefmark{1}Computer Science Institute, Vrije Universiteit Amsterdam, The Netherlands}
-\IEEEauthorblockA{\IEEEauthorrefmark{3}{Bergen University College, Bergen, Norway}}
-\IEEEauthorblockA{\IEEEauthorrefmark{4}{Volvo Cars, Gothenburg, Sweden}\\
-robvdvalk@gmail.com, patrizio.pelliccione@gu.se, p.lago@vu.nl, heldal@chalmers.se, \\eric.knauss@gu.se, and jacob.juul@volvocars.com}
+%\IEEEauthorblockA{\IEEEauthorrefmark{1}Computer Science Institute, Vrije Universiteit Amsterdam, The Netherlands}
+%\IEEEauthorblockA{\IEEEauthorrefmark{3}{Bergen University College, Bergen, Norway}}
+%\IEEEauthorblockA{\IEEEauthorrefmark{4}{Volvo Cars, Gothenburg, Sweden}\\
+%robvdvalk@gmail.com, patrizio.pelliccione@gu.se, p.lago@vu.nl, heldal@chalmers.se, \\eric.knauss@gu.se, and jacob.juul@volvocars.com}
 %\IEEEauthorblockA{
 %Email: name@xyz.com}
+%}
+
+
+ %  in this sample file, there are a *total*
+% of EIGHT authors. SIX appear on the 'first-page' (for formatting
+% reasons) and the remaining two appear in the \additionalauthors section.
+%
+\author{
+Rob van der Valk$^1$, 
+Patrizio Pelliccione$^2$,  
+Patricia Lago$^1$,  
+Rogardt Heldal$^{2,3}$, 
+Eric Knauss$^2$, 
+Jacob Juul$^4$}
+\affiliation{%
+  \institution{
+        $^1$ Computer Science Institute, Vrije Universiteit Amsterdam, The Netherlands\\
+        $^2$ Chalmers University of Technology $|$ University of Gothenburg, Sweden\\
+        $^3$ Bergen University College, Bergen, Norway\\
+        $^4$ Volvo Cars, Gothenburg, Sweden
+    }
 }
+\email{robvdvalk@gmail.com, patrizio.pelliccione@gu.se, p.lago@vu.nl, heldal@chalmers.se, eric.knauss@gu.se, and jacob.juul@volvocars.com}
+
+
+\renewcommand{\shortauthors}{R. van der Valk et al.}
+
+
 
 % conference papers do not typically use \thanks and this command
 % is locked out in conference mode. If really needed, such as for
@@ -218,18 +248,18 @@ robvdvalk@gmail.com, patrizio.pelliccione@gu.se, p.lago@vu.nl, heldal@chalmers.s
 %\del{The automotive industry is rapidly changing thanks to both new technological challenges, like autonomous vehicles, connected cars and electrification, and new players that are entering the market, like Tesla, Google, Apple, and Uber. }
 Most of the innovation in automotive is nowadays coming from electronics and software.
 %\del{ and as a matter of fact OEMs are becoming software companies. }
-The pressure of reducing \del{the} time to market and %\del{improving} \ins
-{increasing} flexibility while keeping quality are leading motivations for these companies to embrace \ugh{system-wide} Continuous Integration and Delivery\ins{ (CI\&D), which in the scope of complex automotive value-chains, implies inter-organizational CI\&D}.
+The pressure of reducing  time to market and %\del{improving} \ins
+{increasing} flexibility while keeping quality are leading motivations for these companies to embrace {system-wide} Continuous Integration and Delivery{ (CI\&D), which in the scope of complex automotive value-chains, implies inter-organizational CI\&D}.
 
 In this paper, we investigate the challenges and impediments %\del{system-wide}
-{posed by} \ugh{inter-organizational} \del{Continuous {Integration and} Delivery (}CI\&D\del{)} %\del{in the automotive ecosystem} 
+{posed by} {inter-organizational} CI\&D %\del{in the automotive ecosystem} 
 {in the automotive domain,}
 i.e. continuous software development that involves agile interaction between an OEM {(the car manufacturer)} and its software suppliers. 
-In particular, we focus on {\em contracts} that regulate the agreements between these companies 
+In particular, we focus on {\em \ins{legal} contracts} that regulate the agreements between these companies 
 and {\em transparency} intended as the degree/level of information that is shared between the various companies in the %\chg{ecosystem}{
 value-chain. %}. 
 %\ins{
-The main findings of this study show that (i) inter-organizational transparency is considered positive but not a necessary condition for inter-organizational CI\&D, (ii) transparency has positive effects on information sharing among different companies, and (iii) contracts are an impediment for inter-organizational CI\&D. %}
+The main findings of this study show that (i) inter-organizational transparency is considered positive but not a necessary condition for inter-organizational CI\&D, (ii) transparency has positive effects on information sharing among different companies, and (iii) \ins{legal} contracts are an impediment for inter-organizational CI\&D. %}
 The results of the study provide useful insights for practitioners that work in similar settings. %a similar \ugh{ecosystem}. 
 In addition, the identified challenges and impediments define a research agenda for researchers.
 \end{abstract}
@@ -243,7 +273,7 @@ In addition, the identified challenges and impediments define a research agenda 
 
 %\IEEEpeerreviewmaketitle
 
-\keywords{continuous integration and delivery; transparency; contracts; information sharing; automotive; interview survey}
+\keywords{continuous integration and delivery; transparency; \ins{legal} contracts; information sharing; automotive; interview survey}
 
 \maketitle
 
@@ -272,7 +302,7 @@ To ensure the {\bf reliability} of our study, the study design (explained in Sec
 
 \balance
 
-\bibliographystyle{IEEEtran}
+\bibliographystyle{ACM-Reference-Format}
 \bibliography{bibliography}
 
 \end{document}

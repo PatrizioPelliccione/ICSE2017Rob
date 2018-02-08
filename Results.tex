@@ -12,7 +12,7 @@ Figure~\ref{fig:results} shows an overview of the results and findings. The reas
 \vspace{-.2cm}
 \centering
 \includegraphics[width=\textwidth]{figure/results2.pdf}
-\vspace{-.6cm}
+\vspace{-.7cm}
 \caption{Illustration of results and findings}
 \label{fig:results}
 \vspace{-.2cm}
@@ -31,7 +31,8 @@ RQ1 (i.e. {\em What are the risks and/or benefits of increasing inter-organisati
 \item %{\em Transparency is perceived positively/negatively within the companies} - 
 \emph{Proposition 2:} Increased inter-organisational transparency of information is considered positive
 \item %{\em Transparency is easy to improve} - 
-\emph{Proposition 3:} \chg{Inter-organisational sharing of information is considered simple between members of the projects}{Typical risks of inter-organisational transparency (e.g. distance, tooling, IP) can be managed in practice.} 
+\emph{Proposition 3:} %{Inter-organisational sharing of information is considered simple between members of the projects}
+{Typical risks of inter-organisational transparency (e.g. distance, tooling, IP) can be managed in practice.} 
 \item %{\em There is a connection between transparency and the quality of a project's results} - 
 \emph{Proposition 4:} A more open transparency policy improves the quality of the project and its results.
 \end{itemize}
@@ -42,7 +43,7 @@ RQ1 (i.e. {\em What are the risks and/or benefits of increasing inter-organisati
 %This proposition states that information transparency across companies is necessary for inter-organisational CI\&D. 
 The interviewees were asked how important inter-organisational transparency is for CI\&D and whether it is a necessity to pursue. 
 %During this research, we assumed inter-organisational transparency was a key factor for CI\&D processes across companies. However, t
-The interview results {\bf partly reject the proposition}. 
+The interview results {\bf reject the proposition}. 
 Inter-organisational transparency has been identified as very important to pursue in general, but not a necessity for inter-organisational CI\&D. 
 This answer to proposition 1 derives from the following findings\footnote{Here in the following we use the notation F$x$.$y$ to refer to $y$-th finding of proposition $x$.}.
 
@@ -156,7 +157,8 @@ is inherited %more easily adopted
 in future projects as well. However, it is hard to understand whether trust is increased because of working in the same office or because of transparency. This should be %\del{better}\ins
 {further} investigated. %I think it is more due to being in the same office, but we need to look at the interview results. It might be a combination of permitting more transparency and being in the same office. I have not done that so far}
 
-\noindent {\bf F2.3: \chg{Create an understanding}{Some information is sensitive}.}
+\noindent {\bf F2.3: %\chg{Create an understanding}
+{Some information is sensitive}.}
 It is important to identify which kind of information should be shared. 
 %\begin{aquote}{System Lead, Tier-1 supplier}
 %There is a lot of information and there is a risk with this amount of information. People will jump to conclusions when they see some bad numbers somewhere or something that is not happening
@@ -194,7 +196,7 @@ There is a lot of information and there is a risk with this amount of informatio
 %\rog{Seems a bit empty:-, add something more or remove it?}
 
 %\vspace{.2cm}
-\subsubsection{Proposition 3: Inter-organisational sharing of information is considered simple between members of the projects}
+\subsubsection{Proposition 3: Typical risks of inter-organisational transparency (e.g. distance, tooling, IP) can be managed in practice}
 
 This proposition challenges the interviewees to critically evaluate the level of difficulty to share information across companies. In particular, the interviewees were asked about the difficulty to share information and the role of physical distance. The pilot project we are investigating (collaboration between \company{} and a supplier) is perceived as a complex project by both companies. %Due to the complexity of this project, the project members experience that it is difficult to work against full transparency of information with other stakeholders. 
 
@@ -323,7 +325,7 @@ Information shared between project members includes source code, project informa
 Commercial information is not shared among project members. 
 This information contains strategic decisions, estimations, and third-party agreements. 
 The increased transparency across companies results in much more information than traditional projects, but equal or a bit more than agile projects. 
-\del{Third-party agreements are an impediment for full transparency, because of licensing and responsibility issues.}\eric{no support? Does not fit}
+% \del{Third-party agreements are an impediment for full transparency, because of licensing and responsibility issues.}\eric{no support? Does not fit}
 
 \noindent {\bf F5.2: A holistic project overview is needed.} The interviewees expressed that they miss an overview of their contribution in the product and in the overall project:
 
@@ -362,7 +364,9 @@ We assumed that information overload could occur because of increased transparen
 %
 %Quote 4: “I think the dashboard is okay for this level of information, but if you go down one level maybe some technical issue the customers they shouldn’t need to know about. They will get fixed eventfully or other development situations.”
 
-The interview results {\bf \chg{support}{partly reject} the proposition}: information overload \ins{is a risk} \chg{is unlikely to be considered a problem}{ that can be mitigated through precise information}. This answer to proposition 6 is deduced from \ins{F5.2} and the following finding \ins{F6.1}:
+The interview results {\bf %\chg{support}
+{partly reject} the proposition}: information overload {is a risk} %\chg{is unlikely to be considered a problem}
+{ that can be mitigated through precise information}. This answer to proposition 6 is deduced from {F5.2} and the following finding {F6.1}:
 
 \noindent {\bf F6.1: Understanding thanks to collaboration.} 
 {\em Information precision} is information sharing where supply and demand of information correspond. {\em Information overload} is information sharing where the receiving organisation receives more information than absolutely necessary. 
@@ -547,6 +551,7 @@ This development also enables companies to hire new employees easier, because op
 
 
 
+
 \subsection{Summary of the findings and challenges}\label{sec:findings_RQs}
 
 The following summarizes the findings and highlights the main challenges while giving an answer to the research questions.
@@ -562,11 +567,23 @@ Increased transparency among organizations leads to much more information availa
 Strict contract-based collaboration is an impediment for inter-organisational CI\&D. More flexible contracts will bring benefits to inter-organizational collaborations. However, contracts facilitate negotiations between different organizations. 
 \paragraph*{RQ4: Are industry-wide standards and processes shared among organizations an enabler?} %- 
 
-Industry-wide standards and processes that are shared among organizations promote collaboration, knowledge sharing, and communication. Open-source initiatives help in the same direction and facilitate also the hiring process since people are already skilled. However, open-source projects should be mature enough and the management of the project should be clearly controlled by a person, team, or organization.
+Industry-wide standards and processes that are shared among organizations promote collaboration, knowledge sharing, and communication.
+AUTOSAR, which defines a standard software architecture for electronic control units (ECU) \cite{fennel2006achievements}, is one example. 
+AUTOSAR defines certain components, such as application software components and basic software components as well as a runtime environment.
+These parts need to be integrated on specific hardware into a functional ECU, which requires that all software components are compiled in a single binary.
+This is typically done by a Tier-1 supplier, which can cause delays in continuous integration.
 
+Open-source initiatives help in the same direction and facilitate also the hiring process since people are already skilled. However, open-source projects should be mature enough and the management of the project should be clearly controlled by a person, team, or organization.
 
+{The AUTOSAR consortium is currently working on a new flavour of AUTOSAR (Adaptive AUTOSAR) that removes the need of a single binary and allows software components to be exchanged individually.
+Thus, an OEM could order a first version of ECU hardware and basic software, then iteratively integrate  several versions of their application software, learn limitations of the suppliers' first delivery and use this knowledge for ordering future versions of hardware and basic software.
+This scenario is made complicated by the fact that no upfront knowledge about the functionality of an integrated version is available.
+Thus, integration tests need to be more dynamic as well, and functionality that is distributed over several ECUs does either not fully benefit from continuous integration (since all expected functionality needs to be implemented by all ECUs) or needs to rely on automated service discovery.}
+ 
+{Despite these exciting developments with respect to standards, we foresee that system level CI\&D will have to rely on improved communication between OEM and supplier.
+For this reason, we provide with this paper a first step to investigate transparency in the context of system level, cross-organizational, continuous integration.}
 
-\noindent The biggest challenges identified in our study are: 
+\noindent \textbf{The biggest challenges identified in our study are: }
 
 %\begin{itemize}
 %\paragraph{Challenge 1} 

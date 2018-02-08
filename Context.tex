@@ -82,20 +82,3 @@ But in order to benefit from these aspects on a system level, continuous integra
 In addition, software components that are developed in house often depend on other software components (e.g. basic software, runtime environments), developed by suppliers. 
 Thus, it becomes increasingly important to understand how continuous integration can be supported when involving external organizations.
 
-\ins{Standards, such as AUTOSAR, which defines a standard software architecture for electronic control units (ECU) \cite{fennel2006achievements}.
-In the context of AUTOSAR, the following CI\&D scenario is not uncommon: 
-The OEM develops AUTOSAR compatible application software components in-house in order to support functions in the car. 
-These application software components rely on the runtime environment defined by AUTOSAR and provided through deliveries of the ECU hardware, AUTOSAR's basic software component, and special drivers by multiple suppliers.
-Usually, one of these suppliers is responsible for integrating hardware, basic software components, and application components.
-Note, that this external integration can cause delays in continuous integration.
-Also note, that even in case of in-house integration, all software components (basic and application SW) need to be compiled into one binary that then is uploaded to the ECU.
-}
-
-\ins{The AUTOSAR consortium is currently working on a new flavour of AUTOSAR: Adaptive AUTOSAR.
-In adaptive AUTOSAR, software components can be exchanged individually without recompiling the complete binary for the ECU.
-Thus, an OEM could order a first version of ECU hardware and basic software, then iteratively integrate  several versions of their application software, learn limitations of the suppliers’ first delivery and use this knowledge for ordering future versions of hardware and basic software.
-This scenario is made complicated by the fact that no upfront knowledge about the functionality of an integrated version is available.
-Thus, integration tests need to be more dynamic as well, and functionality that is distributed over several ECUs does either not fully benefit from continuous integration (since all expected functionality needs to be implemented by all ECUs) or needs to rely on automated service discovery.}
- 
-\ins{In conclusion, despite these exciting developments with respect to standards, we foresee that system level CI\&D will have to rely on improved communication between OEM and supplier.
-For this reason, we provide with this paper a first step to investigate transparency in the context of system level, cross-organizational, continuous integration.}
