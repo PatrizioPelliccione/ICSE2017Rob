@@ -19,10 +19,11 @@ This means that the knowledge and competence of building a car is spread across 
 %}
 
 %\ins{
-To manage this complexity, the V-model\footnote{Originally developed for defense applications by the German DoD - \url{www.v-modell-xt.de}} %\ins{
+To manage this complexity, the V-model\footnote{Originally developed for the defense domain %by the German DoD 
+- \url{www.v-modell-xt.de}} %\ins{
 is the de-facto development method in the automotive domain as also implicitly suggested by the ISO 26262 functional safety standard~\cite{iso26262}.
 Consequently, the overall development organization is split in different groups, both by abstraction and competence (e.g. top level requirements,
-architecture, design and software development, hardware, mechanical parts). %\todo{Previous sentence is unclear.}
+architecture, software development, mechanical parts). %\todo{Previous sentence is unclear.}
 This can cause a silo effect that hinders information sharing and synergy. %}
 
 
@@ -56,11 +57,12 @@ To our knowledge, this {critical perspective of transparency and legal contracts
 
 In this paper we investigate %\todo{what we claim here is not fully aligned with the RQs} 
 %\del{what are the} 
-challenges and impediments of inter-organizational CI\&D in automotive system-development. 
-%scaling software engineering agility \todo{added SE: to make the SE relevance more evident} beyond the company boundaries.  
+challenges and impediments of inter-organizational CI\&D in automotive system-development
+%scaling software engineering agility \todo{added SE: to make the SE relevance more evident} beyond the company boundaries.
 %However, our hypothesis, which is beyond the motivation of this paper, is that {\bf closed contracts are a killer for cross-organizations CI\&D}.
-\ins{We consider this to include cases, where suppliers continuously deliver working software towards an OEM as well as any challenges that need to overcome in order to integrate these and compile them into deliveries to vehicles in possession of end-users.}
-Specifically, we focus on {\em \ins{legal} contracts} that regulate the agreements between these companies 
+, i.e. the collaboration between an OEM and one or more suppliers, where contributions from more than one organization are continuously integrated and compiled into a potential delivery to end-users.
+%\del{We consider this to include cases, where suppliers continuously deliver working software towards an OEM as well as any challenges that need to overcome in order to integrate these and compile them into deliveries to vehicles in possession of end-users. }\pat{I don't know how to simplify this sentence. Difficult to understand.}\eric{better?}
+Specifically, we focus on {\em legal contracts} that regulate the agreements between these companies 
 %are mainly based on closed contracts.
 and {\em {inter-organisational} transparency} intended as the degree/level of information that is shared between the various companies %\ins{
 involved in the development and its associated value-chain. %} \del{in the ecosystem}. 
@@ -85,11 +87,15 @@ addresses the following research questions:
 %automotive software ecosystem?
 \begin{itemize}
 %\item {\em RQ1: What is the impact on business model strategies?}
-\item {\em RQ1: \ins{In a setting of inter-organizational CI\&D,} \chg{W}{w}hat are risks and/or benefits of increasing inter-organisational transparency?}
-\item {\em RQ2: Is there a lack or overload of information that is exchanged across organizations\ins{, when they collaborate in an inter-organizational CI\&D setting}?} 
-\item {\em RQ3: Are contracts an impediment for scaling \chg{agility}{CI\&D} across company boundaries?} %, and 
+\item {\em RQ1:  What are risks and/or benefits of increasing %\del{inter-organizational} 
+transparency {in an inter-organizational CI\&D setting}?}
+\item {\em RQ2: {(How) can sufficient information be provided in inter-organizational CI\&D collaborations?}
+%Is there a lack or overload of information that is exchanged across organizations\ins{, when they collaborate in an inter-organizational CI\&D setting}?
+} 
+\item {\em RQ3: Are contracts an impediment for scaling %\chg{agility}
+{CI\&D} across company boundaries?} %, and 
 %are industry-wide standards and processes shared among organizations an enabler?} 
-\item {\em RQ4: Are industry-wide standards and processes shared among organizations an enabler\ins{ for inter-organizational CI\&D}?}
+\item {\em RQ4: Are industry-wide standards and processes shared among organizations an enabler{ for inter-organizational CI\&D}?}
 %\todo{I am still not happy to have 2 questions in 1 RQ.}
 %what are the challenges of changing this collaboration model?} %What are the risksbenefits of increasing inter-organisations transparency?} %ch existing concepts can benefit inter-organisational transparency?}
 %\item {\em RQ3: What are the main challenges while improving inter-organisations transparency?}
@@ -97,8 +103,8 @@ addresses the following research questions:
 \end{itemize}
 %\end{itemize}
 
-To give an answer to these research questions we performed semi-structured interviews within \chg{\company{}\footnote{Anonymized for double blind review.}}{\company{} 
-and} 
+To give an answer to these research questions we performed semi-structured interviews within \company{} 
+and 
 %Delphi 
 one of their larger suppliers in the context of a pilot project within \company{}. % Volvo Cars.
 This pilot project is experimenting a more open and transparent way of working between these two companies. Thus, this pilot project is an ideal setting for investigating the effects of changing the way of collaborating between OEMs and suppliers.  
@@ -134,14 +140,15 @@ While strategies exist that facilitate information sharing  across organizations
 
 %\pat{Rogardt might help here. I don't know much about this project and also, how much we can say?}
 
-\ins{Note, that it is quite usual in the automotive software development to share coded from different partners (typically: encrypted binary code). 
-We are not considering the transparency of this code nor associated challenges such as product liability and leave these aspects for future work.}
+Note, that it is quite usual in the automotive software development to share code from different partners (typically: encrypted binary code). We leave the challenges related to these aspects, such as product liability, for future work.
+
+%We are not considering the transparency of this code nor associated challenges such as product liability and leave these aspects for future work.
 
 
 The paper is organized as follows. Section~\ref{sec:context} defines the context of the study. 
-\ins{Section~\ref{sec:relatedWorks} presents related works.} 
+Section~\ref{sec:relatedWorks} presents related works.
 Section~\ref{sec:researchMethod} describes the research methodology we followed in order to give an answer to the research questions.
-Section~\ref{sec:results} presents the results of the study. Section~\ref{sec:discussion} discusses the main findings. \del{Section~\ref{sec:relatedWorks} presents related works.} 
+Section~\ref{sec:results} presents the results of the study. Section~\ref{sec:discussion} discusses the main findings.  
 The paper concludes in Section~\ref{sec:conclusion} with final remarks and directions for future work.
 
 % \todo{Eric: Add some more information about transparency. Investigate papers such as ``Modeling and Reasoning About Information Quality Requirements''. Position this study as a way to understand practitioner perspective on this.}
